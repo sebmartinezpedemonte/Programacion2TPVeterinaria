@@ -35,7 +35,9 @@ public abstract class Mascota {
         this.estado = estado;
     }
 
-    protected EstadoMascota getEstado() {
+
+
+    public EstadoMascota getEstado() {
         return estado;
     }
 
@@ -47,12 +49,11 @@ public abstract class Mascota {
         this.suscriptores.remove(persona);
     }
 
-    //TODO - Agregar este metodo a recibir comida, bebida y recibirMedicina
-    public EstadoMascota notificar(){
+    //Este metodo se llama en recibir comida, bebida y recibirMedicina
+    public void notificar(){
         for(Persona p : this.suscriptores){
           p.update(this.estado);
         }
-        return this.estado;
     }
 
 }

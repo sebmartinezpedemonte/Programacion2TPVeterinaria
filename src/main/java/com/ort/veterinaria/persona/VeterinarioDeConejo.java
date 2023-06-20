@@ -3,8 +3,8 @@ package com.ort.veterinaria.persona;
 import com.ort.veterinaria.Criterio;
 import com.ort.veterinaria.mascota.Mascota;
 
-public class VeterinarioDePerro extends Veterinario{
-    public VeterinarioDePerro(String nombre, String apellido, String email, String numeroCelular, String dni) {
+public class VeterinarioDeConejo extends Veterinario{
+    public VeterinarioDeConejo(String nombre, String apellido, String email, String numeroCelular, String dni) {
         super(nombre, apellido, email, numeroCelular, dni);
     }
 

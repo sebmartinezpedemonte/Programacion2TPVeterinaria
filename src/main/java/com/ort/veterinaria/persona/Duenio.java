@@ -7,6 +7,7 @@ public class Duenio extends Persona{
         super(nombre, apellido, email, numeroCelular, dni);
     }
 
+
     @Override
     public void update(EstadoMascota estado) {
         System.out.println("Su mascota esta " + estado.toString());

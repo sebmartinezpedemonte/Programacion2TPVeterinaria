@@ -26,32 +26,20 @@ public abstract class Veterinario extends Persona{
     protected void setCriterio(Criterio criterio) {
         this.criterio = criterio;
     }
-    //TODO Originalmente abstracta
-    public void examinarMascota(Mascota m){
 
-    }
+    public abstract void examinarMascota(Mascota m);
 
-    //TODO Originalmente abstracta
-    public void darDeComer(Mascota m){
-        m.recibirComida();
-    }
-    //TODO Originalmente abstracta
-    public void darDeTomar(Mascota m){
-        m.recibirBebida();
-    }
-    //TODO Originalmente abstracta
-    public void darMedicina(Mascota m){
-        m.recibirMedicina();
-    }
-    //TODO Originalmente abstracta
-    public void atenderMascota(Mascota m){
+    public abstract void darDeComer(Mascota m);
 
-    }
+    public abstract void darDeTomar(Mascota m);
 
-    //TODO Originalmente abstracta
-    public void aplicarCriterio(Criterio c){
+    public abstract void darMedicina(Mascota m);
 
-    }
+    //TODO Falta implementar esto en las clases hijas
+    public abstract void atenderMascota(Mascota m);
+
+    //TODO Falta implementar esto en las clases hijas
+    public abstract void aplicarCriterio(Criterio c);
 
     public void cambiarCriterio(Criterio criterio){
         this.criterio = criterio;

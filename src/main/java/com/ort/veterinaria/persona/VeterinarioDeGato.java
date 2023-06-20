@@ -3,8 +3,8 @@ package com.ort.veterinaria.persona;
 import com.ort.veterinaria.Criterio;
 import com.ort.veterinaria.mascota.Mascota;
 
-public class VeterinarioDePerro extends Veterinario{
-    public VeterinarioDePerro(String nombre, String apellido, String email, String numeroCelular, String dni) {
+public class VeterinarioDeGato extends Veterinario{
+    public VeterinarioDeGato(String nombre, String apellido, String email, String numeroCelular, String dni) {
         super(nombre, apellido, email, numeroCelular, dni);
     }
 
@@ -28,7 +28,6 @@ public class VeterinarioDePerro extends Veterinario{
     public void darMedicina(Mascota m) {
         this.update(m.getEstado());
     }
-
     //TODO Falta implementar esto
     @Override
     public void atenderMascota(Mascota m) {

@@ -23,10 +23,15 @@ public abstract class Persona {
         this.mascotas = new ArrayList<>();
     }
 
+    public void agregarMascota(Mascota mascota){
+        this.mascotas.add(mascota);
+    }
+    public void quitarMascota(Mascota mascota){
+        this.mascotas.remove(mascota);
+    }
 
 
-
-
+    //TODO implementar esto en clases hijas
     public abstract void update(EstadoMascota estado);
     //creo que este recibe el EstadoMascota en su update
     //como parametro que recibe de notificar
