@@ -9,7 +9,7 @@ public class Duenio extends Persona{
 
 
     @Override
-    public void update(EstadoMascota estado) {
+    public void actualizar(EstadoMascota estado) {
         System.out.println("Su mascota esta " + estado.toString());
     }
 }

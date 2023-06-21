@@ -16,17 +16,17 @@ public class VeterinarioDeConejo extends Veterinario{
     @Override
     public void darDeComer(Mascota m) {
 
-        this.update(m.getEstado());
+        this.actualizar(m.getEstado().recibirComida());
     }
 
     @Override
     public void darDeTomar(Mascota m) {
-        this.update(m.getEstado());
+        this.actualizar(m.getEstado().recibirBebida());
     }
 
     @Override
     public void darMedicina(Mascota m) {
-        this.update(m.getEstado());
+        this.actualizar(m.getEstado().recibirMedicina());
     }
 
     //TODO Falta implementar esto

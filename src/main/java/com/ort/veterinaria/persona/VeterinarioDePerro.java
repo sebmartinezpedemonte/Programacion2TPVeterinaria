@@ -1,6 +1,7 @@
 package com.ort.veterinaria.persona;
 
 import com.ort.veterinaria.Criterio;
+import com.ort.veterinaria.estadoMascota.EstadoMascota;
 import com.ort.veterinaria.mascota.Mascota;
 
 public class VeterinarioDePerro extends Veterinario{
@@ -15,18 +16,20 @@ public class VeterinarioDePerro extends Veterinario{
 
     @Override
     public void darDeComer(Mascota m) {
-
-        this.update(m.getEstado());
+        EstadoMascota eM;
+        m.recibirComida();
+        eM = m.getEstado();
+        this.actualizar(eM);
     }
 
     @Override
     public void darDeTomar(Mascota m) {
-        this.update(m.getEstado());
+        this.actualizar(m.getEstado().recibirBebida());
     }
 
     @Override
     public void darMedicina(Mascota m) {
-        this.update(m.getEstado());
+        this.actualizar(m.getEstado().recibirMedicina());
     }
 
     //TODO Falta implementar esto

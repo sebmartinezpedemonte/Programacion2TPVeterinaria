@@ -9,21 +9,18 @@ public class Gato extends Mascota{
     @Override
     public void recibirComida() {
         setEstado(this.getEstado().recibirComida());
-        this.notificar();
         System.out.println("Meow");
     }
 
     @Override
     public void recibirBebida() {
         setEstado(this.getEstado().recibirBebida());
-        this.notificar();
         System.out.println("Meow");
     }
 
     @Override
     public void recibirMedicina() {
         setEstado(this.getEstado().recibirMedicina());
-        this.notificar();
         System.out.println("Meow");
     }
 }

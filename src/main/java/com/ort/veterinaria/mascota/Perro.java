@@ -10,21 +10,18 @@ public class Perro extends Mascota{
     @Override
     public void recibirComida() {
         setEstado(this.getEstado().recibirComida());
-        this.notificar();
         System.out.println("Woof woof");
     }
 
     @Override
     public void recibirBebida() {
         setEstado(this.getEstado().recibirBebida());
-        this.notificar();
         System.out.println("Woof woof");
     }
 
     @Override
     public void recibirMedicina() {
         setEstado(this.getEstado().recibirMedicina());
-        this.notificar();
         System.out.println("Woof woof");
     }
 }

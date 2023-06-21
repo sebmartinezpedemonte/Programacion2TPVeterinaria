@@ -33,6 +33,7 @@ public abstract class Mascota {
 
     protected void setEstado(EstadoMascota estado){
         this.estado = estado;
+        this.notificar();
     }
 
 
@@ -49,10 +50,10 @@ public abstract class Mascota {
         this.suscriptores.remove(persona);
     }
 
-    //Este metodo se llama en recibir comida, bebida y recibirMedicina
+
     public void notificar(){
         for(Persona p : this.suscriptores){
-          p.update(this.estado);
+          p.actualizar(this.estado);
         }
     }
 

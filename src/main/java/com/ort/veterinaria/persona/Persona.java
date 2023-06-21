@@ -32,7 +32,7 @@ public abstract class Persona {
 
 
     //TODO implementar esto en clases hijas
-    public abstract void update(EstadoMascota estado);
+    public abstract void actualizar(EstadoMascota estado);
     //creo que este recibe el EstadoMascota en su update
     //como parametro que recibe de notificar
 

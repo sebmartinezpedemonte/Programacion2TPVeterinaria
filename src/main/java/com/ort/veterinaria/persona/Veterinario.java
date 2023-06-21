@@ -15,7 +15,7 @@ public abstract class Veterinario extends Persona{
     }
 
     @Override
-    public void update(EstadoMascota estado) {
+    public void actualizar(EstadoMascota estado) {
         System.out.println("Su paciente esta " + estado.toString());
     }
 
